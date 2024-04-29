@@ -3,7 +3,7 @@ install docker in all
 
 -----------on manager---------
 docker swarm init
-copy token command and paste in both worker node
+copy token command and paste in both worker node-
 mkdir web_app
 
 vi app.py 
@@ -49,7 +49,7 @@ services:
   # Service Name Defined as web
   web:
     # Pull the Image from Repository.
-    # replace username/repo:tag with your name and image details
+    # replace shrush0711/repo:tag with your name and image details
     image: username/web_app:1.0
     # Command used to deploy the Service
     deploy:
