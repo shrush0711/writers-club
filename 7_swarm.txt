@@ -3,7 +3,7 @@ install docker in all
 manager----------------------------------------------
 docker swarm init
 docker node ls
-paste token to all workers
+paste token to all workers-----------------------------
 docker service create alpine ping www.google.com
 docker service ls
 docker service ps [id_name]
