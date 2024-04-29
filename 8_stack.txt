@@ -124,11 +124,11 @@ cat requirements.txt
 
 ls
 docker build -t web_app .
-docker tag web_app:latest username/web_app:1.0
+docker tag web_app:latest shrush0711/web_app:1.0
 
 docker login 
 enter id/password of dockerhub
-docker push username/web_app:1.0
+docker push shrush0711/web_app:1.0
 docker stack deploy -c docker-compose.yml web_app
 docker node ls
 docker container ls 
