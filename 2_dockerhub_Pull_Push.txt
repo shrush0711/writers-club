@@ -14,7 +14,7 @@ CMD [“echo”,”Image created”]
 cat Dockerfile
 docker build  -t bcademo:0.1 . 
 
-docker login [enter id password(saketarya09/saket@123)
+docker login [enter id password(shrush0711/shru@0711)
 docker images
 docker tag image_id shrush0711/practialexam
 docker push shrush0711/practialexam
