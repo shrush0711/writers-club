@@ -1,0 +1,19 @@
+4-worker and 1 manager
+install docker in all
+manager----------------------------------------------
+docker swarm init
+docker node ls
+paste token to all workers
+docker service create alpine ping www.google.com
+docker service ls
+docker service ps [id_name]
+docker service create --replicas 3 alpine ping www.google.com
+docker service ls
+docker service scale 3_id=5
+docker service ls
+docker service rollback [5_id]
+docker service ls
+docker container ls
+docker swarm leave
+docker swarm leave --force
+docker node ls

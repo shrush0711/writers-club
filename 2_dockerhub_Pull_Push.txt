@@ -1,0 +1,28 @@
+create a instance
+
+install docker
+
+sudo nano Dockerfile 
+
+----------------------------------------
+FROM ubuntu 
+MAINTAINER Saket Arya 
+RUN apt-get update 
+RUN apt-get install nginx -y
+CMD [“echo”,”Image created”] 
+----------------------------------------
+cat Dockerfile
+docker build  -t bcademo:0.1 . 
+
+docker login [enter id password(saketarya09/saket@123)
+docker images
+docker tag image_id dockerid/nameyourrepositry
+docker push dockerid/repositryname
+---------------------------------------------------
+check dockerhub
+---------------------------------------------------
+docker images
+docker rmi --force image id
+docker images
+docker pull dockerid/repositryname
+docker images

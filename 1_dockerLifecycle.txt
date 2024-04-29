@@ -1,0 +1,47 @@
+create 1 instance and connect
+--------------------------------------------
+sudo -i
+-------------------------------------------
+sudo apt-get update
+sudo apt-get install \
+apt-transport-https \
+ca-certificates \
+curl \
+gnupg-agent \
+software-properties-common
+---------------------------------------------------
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+--------------------------------------------------------------------------------------
+sudo add-apt-repository \
+"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) \
+stable"
+---------------------------------------------------------------------
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+----------------------------------------------------------------------
+Check Status of Docker
+systemctl status docker
+---------------------------------------------------------------------
+docker images
+-----------------------------------------------------------
+docker run hello-world
+docker run –-name webserver1 -p 7089:80 -d nginx
+docker run –-name mycentos -d centos
+----------------------------------------------------
+open the port to view images wuth publicid:port no.
+---------------------------------------------------
+start ngnix
+------------------------------------------------------
+docker ps -a  (get container id)
+-----------------------------------------------
+docker history
+docker top containerId
+docker stop containerId
+docker restart containerId
+docker rm containerId
+docker stats containerId
+docker pause containerId
+docker unpause containerId
+docker kill containerId
+
+

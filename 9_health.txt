@@ -1,0 +1,16 @@
+create a instance and connect
+docker install
+mkdir healthcheck
+cd healthcheck
+docker ps -a
+docker container run --name postgres1 -d postgres
+docker images
+docker ps -a
+docker run --name postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres 
+docker ps
+docker container exec -it postgres bash
+pg_isready -U postgres
+exit
+docker container run -d --name postgres2 -e POSTGRES_PASSWORD=mysecretpassword --health-cmd="pg_isready -U postgres || exit 1"  postgres
+docker ps -a
+docker ps -a
