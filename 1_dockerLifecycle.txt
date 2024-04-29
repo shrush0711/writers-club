@@ -28,11 +28,12 @@ docker run hello-world
 docker run nginx
 docker run centos
 ---------------------------------------------------
-start ngnix_id
-------------------------------------------------------
+docker images
+---------------------------------------------------
 docker ps -a  (get container id)
 -----------------------------------------------
-docker history
+start ngnix_id
+------------------------------------------------------
 docker top containerId
 docker stop containerId
 docker restart containerId
