@@ -50,7 +50,7 @@ services:
   web:
     # Pull the Image from Repository.
     # replace shrush0711/repo:tag with your name and image details
-    image: username/web_app:1.0
+    image: shrush0711/web_app:1.0
     # Command used to deploy the Service
     deploy:
       # Run 5 instances of that image as a service called web
