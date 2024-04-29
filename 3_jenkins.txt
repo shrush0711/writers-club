@@ -12,8 +12,7 @@ docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins
 
 copy public id and open in new tab with port (public id :8080)
 
-Copy password and over-->
-9309f1b970c64807ad5417f16afc9a4e
+Copy password and paste-->
 
 public_id/50000
 
